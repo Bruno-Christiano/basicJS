@@ -9,11 +9,25 @@
     
 </body>
 <script> 
-    var nota1 = window.prompt ('Informe a primeira nota do aluno:')
-    var nota2 =  window.prompt ('Informe a segunda nota do aluno: ')
-    var media = Number(`${nota1}`) + Number(`${nota2}`)
+    var nota1 = Number(window.alert ('Informe a primeira nota do aluno:'))
+    var nota2 = Number( window.prompt ('Informe a segunda nota do aluno: '))
+    var media = (nota1 + nota2) / 2
     document.writeln (`A media do aluno é: ${media}`)
+
+        if (media >=5) {
+            document.writeln ('Aluno aprovado') 
+            
+        } else if ((media <5) &&(media >= 4)) {
+            document.writeln ('Aluno em recuperação')
+            
+        }else {
+            document.writeln ('Aluno reprovado.')
+        }
    
+
+
+
+
  //var nome = window.prompt ('Qual seu nome? ')
    // document.writeln(`Seu nome tem ${nome.length} letras <br>`) 
    // document.writeln (`Seu nome em Maiusculo é: ${nome.toUpperCase()} <br>`)
