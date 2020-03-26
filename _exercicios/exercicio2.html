@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+</head>
+<body>
+    
+</body>
+<script>
+    ///*Escreva um algoritmo que leia os nu´meros maiores que 0 
+    //enquanto a sua soma não ultrapasse 10, escreva o sucessor do nu´mero: */
+    var  numeros=1, cont=1, soma = 0, sucessor = 0
+
+    while ((numeros !=0) &&(soma <=10)) {
+			
+			
+        var numeros =Number(prompt("Informe numeros inteiros ou 0 para sair: "))
+			var soma = soma + numeros;
+			
+			if ((soma <= 10) &&(numeros !=0 ))
+			{
+				var sucessor = numeros+ 1;
+				
+				document.writeln (`O sucessor de ${numeros} é: ` + sucessor);		
+			}
+			}
+
+</script>
+
+</html>
