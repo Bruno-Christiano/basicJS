@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background-color: aquamarine;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            width: 400px;
+            height: 400px;
+            line-height: 380px;
+            text-align: center;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="area"> 
+        <button id="butao">Click aqui</button>
+    </div>
+    
+    <Script>
+        var a = document.getElementById ('area')
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', Entrar)
+        a.addEventListener('mouseout', Sair) // o modo de criar os eventos no js, melhor pois torna o html mais limpo.
+
+        function clicar(){
+            
+           a.innerText = "Olá, pequeno gafanhoto!"
+           document.getElementById('area').style.backgroundImage = "url('./mascote-javascript.png')" ;
+           document.getElementById('area').style.backgroundRepeat = "no-repeat";
+           document.getElementById('area').style.lineHeight = "750px";
+           document.getElementById('area').style.fontSize = "25pt";
+
+
+        }
+        
+        function Entrar (){
+           
+            a.innerText = "mouse entrou"
+            
+        }
+        function Sair (){
+            a.innerText = "saiu"
+        }
+
+    </Script>
+    
+</body>
+</html>

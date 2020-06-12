@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,28 +12,29 @@
             size: 18pt;
             color: white;
         }
+
         h1 {
             color: teal;
             text-align: center;
         }
     </style>
 </head>
+
 <body>
-    <H1>Usando o DOM</H1>
+    <H1 id="titulo">Usando o DOM</H1>
     <p>Aqui vai um resultado</p>
     <p>Apredendo <strong>DOM</strong> em JS.</p>
     <div id="teste">Clique em mim</div>
 
     <script>
+        var titulo = window.document.getElementById('titulo')
+        var d = window.document.getElementById('teste') // seleção por id, no caso 'teste'.
+        window.document.writeln(d.innerHTML) // o texto que está no identificador
+        d.style.color='red'
 
-       var d = window.document.getElementById('teste')
-       window.document.write (d.innerText)
-
-    
         
-
-
     </script>
-    
+
 </body>
+
 </html>

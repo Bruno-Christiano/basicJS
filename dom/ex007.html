@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <style>
+        button#btnSoma {
+            width: 100px;
+
+
+        }
+
+        input {
+            width: 100px;
+            margin-left: 10px;
+            color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Somando valores</h2>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <button id="btnSoma" type="button" class="btn btn-primary" onclick="Somar()">Soma</button>
+    <div id="res">Resultado SOMA:</div> </br>
+
+    <h2>Multiplicando valores</h2>
+    <input type="number" name="n1" id="number0"> *
+    <input type="number" name="n2" id="number1">
+    <button id="mult" type="button" class="btn btn-primary" onclick="Multiplicar()">Multiplicar</button>
+    <div id="resposta">Resultado MULTIPLICAÇÃO:</div> </br>
+</body>
+<script>
+  //  var tn1 = window.document.getElementById('txtn1')//caixa de texto que vai receber o numero
+   // var tn2 = window.document.getElementById('txtn2')//caixa de texto que vai receber o numero
+    //tn1.addEventListener('Somar')
+    function Somar() {
+        var tn1 = window.document.getElementById('txtn1')//caixa de texto que vai receber o numero
+        var tn2 = window.document.getElementById('txtn2')//caixa de texto que vai receber o numero
+        var res = document.getElementById('res')
+        var n1 = Number(tn1.value)//ja converte da CAIXA DE TEXTO, o value pega o valor da caixa de texto, ja para forma de numero ou o que precisar
+        var n2 = Number(tn2.value)
+        var soma = n1 * n2
+        res.innerText = (`A soma de ${n1} e ${n2} é igual a : ${soma}`)
+    }
+    function Multiplicar() {
+        var numero0 = window.document.getElementById('number0')
+        var numero1 = window.document.getElementById('number1')
+        var resposta = window.document.getElementById('resposta')
+        var numeroRecebe0 = Number(numero0.value)
+        var numeroRecebe1 = Number(numero1.value)
+        var multi = (numeroRecebe0 * numeroRecebe1)
+        resposta.innerText = (`A multiplicação de: ${numeroRecebe0} e ${numeroRecebe1} = ${multi}`)
+    }
+</script>
+
+</html>
