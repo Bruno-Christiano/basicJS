@@ -1,34 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detran</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-       
-    </style>
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+
 </head>
 <body>
     <h1>Sistemas de multas</h1>
-    Velocidade do carro:<input type="number" name="velocidade" id="velocidade"> Km/h
-    <button type="button" id="verificar" class="btn btn-outline-primary" value="Verificar" onclick="calcular()">Verificar</button>
+    Velocidade do carro: <input type="number" name="velocidade" id="velocidade"> Km/h
+    <button type="button" id="verificar" class="btn btn-outline-primary" value="Verificar"> Verificar </button>
     <div id="resultado"></div>
-
-    <script>
-
-        function calcular(){
-            var vel = document.querySelector('input#velocidade')
-            var result = document.querySelector('div#resultado')
-            var velocidadeIformada = Number(vel.value)
-            result.innerHTML = (`Sua Velocidade é ${velocidadeIformada} Km/h </br> `) 
-            if (velocidadeIformada > 60) {
-                result.innerHTML += (' Você ultrapassou a velocidade permitida!')
-            } else{
-                result.innerHTML += ('Você está na velocidade da faixa permitida')
-            }
-        }
-    </script>
 </body>
+
+<script src="exemplo1.js"></script>
+
 </html>
