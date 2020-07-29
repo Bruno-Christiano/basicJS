@@ -1,5 +1,5 @@
 body{
-    background: azure;
+    
     font: normal 15pt ;
 }
 
@@ -9,13 +9,18 @@ header{
 section#principal{
     width: 400px;
     height: 400px;
-    background-color: aqua;
     border-radius: 10px;
     padding: 15px;
     margin: auto;  
     box-shadow: 3px 3px 10px rgb(68, 68, 68);  
 }
+div#sexo{
+    padding-top: 8px;
+}
 
 footer{
     text-align: center;
+}
+div#botao{
+    padding-top: -20px;
 }

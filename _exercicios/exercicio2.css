@@ -1,0 +1,34 @@
+@font-face{
+    font-family: 'Modak', cursive;
+    src: url("./Modak-Regular.ttf");
+}
+h2{
+    font-family: 'Modak';
+    text-align: center;
+    padding-top: 10px;
+}
+.telaPrincipal{
+    padding: 10px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: auto;  
+    box-shadow: 3px 3px 10px rgb(68, 68, 68);  
+}
+
+.dropdownsSelecao{
+    padding: 10px;
+    padding-top: 3px;
+}
+
+.formulario{
+    padding: 10px;
+}
+.botao{
+    padding: 10px;
+    text-align: center;
+    float: right;
+}
+div#resultado{
+    padding-top: 50px;
+}    
